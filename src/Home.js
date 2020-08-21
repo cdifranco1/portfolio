@@ -34,7 +34,7 @@ const projects = [
   {
     name: "Another To-Do List",
     description: "Full stack web-based to-do list",
-    github: 
+    github: "https://github.com/cdifranco1/weather_cli", 
     link: "https://github.com/cdifranco1/weather_cli",
     tech: ["Node", "Express", "Knex", "PostreSQL", "React", "Material UI"]
   },
