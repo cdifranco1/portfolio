@@ -34,6 +34,7 @@ const projects = [
   {
     name: "Another To-Do List",
     description: "Full stack web-based to-do list",
+    github: 
     link: "https://github.com/cdifranco1/weather_cli",
     tech: ["Node", "Express", "Knex", "PostreSQL", "React", "Material UI"]
   },
@@ -50,13 +51,13 @@ export const Home = () =>
   <div className="py-10 px-20">
     <div className="flex justify-between items-start">
       <div className="w-1/2">
-        <h1 className="text-3xl font-bold">Hello! My name is Charlie DiFranco.</h1>
-        <p className="text-xl mt-3 mb-5">
+        <h1 className="text-2xl font-bold">Hello! My name is Charlie DiFranco.</h1>
+        <p className="text-lg mt-3 mb-5">
           I left my career as a Valuation Consultant at Deloitte to pursue a career in software development. I'm currently a student at Lambda School, an 8+ month immersive web development and computer science academy.
         </p>
         <div className="my-4">
           <h3 className="text-xl font-semibold mb-2">Skills and Languages:</h3>
-          <ul className="flex flex-col flex-wrap list-disc list-inside h-48 text-lg">
+          <ul className="flex flex-col flex-wrap list-disc list-inside h-48">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
@@ -84,7 +85,7 @@ export const Home = () =>
       <h2 className="text-3xl font-bold tracking-wide mb-5">Projects</h2>
       {projects.map((el) =>
         <div className="flex justify-between">
-          <a href={el.link} className="flex flex-col px-2 py-2 rounded-md hover:bg-blue-100">
+          <a href={el.link} className="flex flex-col px-2 py-2 rounded-md hover:bg-blue-100 w-3/4">
             <div>
               <span className="text-lg w-3/12 font-semibold tracking-wide">{el.name}</span>
               <span className="text-lg px-3 text-gray-600">{el.description}</span>
