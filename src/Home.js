@@ -5,7 +5,7 @@ import githubMark from "./assets/GitHub-Mark-32px.png"
 const projects = [
   {
     name: "ValU",
-    description: "Full stack web application for developing business enterprise discounted cash flow valuations",
+    description: "Full stack web application for developing business enterprise discounted cash flow valuations tailored towards valuation professionals",
     link: "https://valuation-swart.vercel.app/",
     github: "https://github.com/cdifranco1/valuation-backend",
     tech: ["Node", "Express", "MongoDB", "Mongoose", "React", "Redux", "Tailwind CSS"]
@@ -33,10 +33,17 @@ const projects = [
   },
   {
     name: "Another To-Do List",
-    description: "Full stack web-based to-do list",
-    github: "https://github.com/cdifranco1/weather_cli", 
-    link: "https://github.com/cdifranco1/weather_cli",
+    description: "Full stack web-based to-do list implementing basic authentication and relational database modeling",
+    github: "https://github.com/cdifranco1/todo-list-backend", 
+    link: "https://todo-list-frontend.vercel.app/",
     tech: ["Node", "Express", "Knex", "PostreSQL", "React", "Material UI"]
+  },
+  {
+    name: "Sleeptracker API",
+    description: "RESTful Node API co-developed with a classmate for a sleeptracking application",
+    github: "https://github.com/Sleeptracker1/back-end",
+    link: "https://github.com/Sleeptracker1/back-end",
+    tech: ["Node", "Express", "PostgreSQL", "Knex", "Jest"]
   },
   {
     name: "Adventure Game",
@@ -48,12 +55,12 @@ const projects = [
 ]
 
 export const Home = () => 
-  <div className="py-10 px-20">
+  <div className="py-10 px-40">
     <div className="flex justify-between items-start">
       <div className="w-1/2">
         <h1 className="text-2xl font-bold">Hello! My name is Charlie DiFranco.</h1>
         <p className="text-lg mt-3 mb-5">
-          I left my career as a Valuation Consultant at Deloitte to pursue a career in software development. I'm currently a student at Lambda School, an 8+ month immersive web development and computer science academy.
+          I left my career as a consultant at Deloitte to pursue a career in software development. I'm currently a student at Lambda School, an 8+ month immersive web development and computer science academy.
         </p>
         <div className="my-4">
           <h3 className="text-xl font-semibold mb-2">Skills and Languages:</h3>
@@ -62,6 +69,7 @@ export const Home = () =>
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>Python</li>
+            <li>Flask</li>
             <li>Node</li>
             <li>Express</li>
             <li>React</li>
@@ -69,7 +77,6 @@ export const Home = () =>
             <li>Tailwind CSS</li>
             <li>Material UI</li>
             <li>Jest</li>
-            <li>Flask</li>
             <li>PostgreSQL</li>
             <li>Knex</li>
             <li>MongoDB</li>
@@ -77,7 +84,7 @@ export const Home = () =>
           </ul>
         </div>
       </div>
-      <div className="relative pb-1/3 w-2/5">
+      <div className="relative pb-1/3 w-2/6">
         <img className="absolute w-full h-full object-cover rounded-lg shadow-lg" src={linkedin}/>
       </div>
     </div>
